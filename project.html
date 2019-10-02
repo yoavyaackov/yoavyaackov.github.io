@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="bootstrap4-glyphicons/css/bootstrap-glyphicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="project.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>project</title>
+</head>
+
+<body>
+    <div class="note" id="note"></div>
+    <div class="container">
+        <div class="row">
+            <div class="mx-auto my-5">
+                <img src="title.png" alt="title">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 notebook">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="taskNum" class="col-form-label">Task Number</label>
+                                <input type="number" class="form-control" id="taskNum" placeholder="Enter Task Number">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="taskTime" class="col-form-label">Task Due Time</label>
+                                <input type="time" class="form-control" id="taskTime" placeholder="Enter Task time">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="textDate" class="col-form-label">Task Due Date</label>
+                                <input type="date" class="form-control" id="textDate">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="taskdetails" class="col-form-label">Task Details</label>
+                                <textarea class="form-control" id="taskdetails" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success" onclick="save()">save</button>
+                    <button type="reset" class="btn btn-danger">reset</button>
+                </form>
+            </div>
+        </div>
+        <div class="row" id="taskCont">
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="project.js"></script>
+</body>
+
+</html>

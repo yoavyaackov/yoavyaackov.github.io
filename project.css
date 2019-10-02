@@ -1,0 +1,58 @@
+body {
+  background: url("pinboard.jpg");
+background-size: 100%;
+}
+.notebook{
+  background: url("formbg.jpg");
+  min-height: 215px;
+  padding: 17px 91px 17px 91px;
+}
+.divStyle{
+  background: url("notebg.png");
+  min-height: 250px;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+   -ms-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+       transition: opacity 0.5s ease-in;
+}
+
+.show {
+  opacity: 1;
+}
+
+.numCount{
+position: relative;
+top: 13px;
+right: 13px;
+}
+
+
+.closeNoteButton{
+  position: absolute;
+  right: 12px;
+  top: 17px;
+}
+
+.transperent-glyph {
+  color:transparent;
+}
+
+.color-glyph {
+  color:red;
+}
+
+.taskNumClass{
+    position: absolute;
+    left: 2px;
+    top: 11px;
+}
+
+.textAreaClass{
+  margin-top: 33px;
+  height: 163px;
+  width: 160px;
+  overflow-y: scroll;
+}
